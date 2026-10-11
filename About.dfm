@@ -1,0 +1,65 @@
+object Frm_About: TFrm_About
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = #20851#20110
+  ClientHeight = 279
+  ClientWidth = 389
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 389
+    Height = 279
+    Align = alClient
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 19
+      Top = 63
+      Width = 348
+      Height = 38
+      Caption = #20339#29790#26102#20195#20027#26495#27979#35797#36890#29992#31243#24207
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -29
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 136
+      Top = 122
+      Width = 87
+      Height = 38
+      Caption = #27491#24335#29256
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -29
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 72
+      Top = 184
+      Width = 196
+      Height = 41
+      Caption = #29256#26412#65306'0.1.1.1'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -32
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+end
