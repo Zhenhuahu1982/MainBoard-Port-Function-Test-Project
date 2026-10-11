@@ -1,0 +1,15 @@
+Start: PwrTest
+
+
+NO.0 Transition--TargetState:S4
+  TargetState:       S4
+  EffectiveState:    S4
+  SleepTimeMs:       2610    
+  HiberPagesWritten: 306821  
+  HiberWriteTimeMs:  6422    
+  HiberReadTimeMs:   1883    
+  BiosInitTimeMs:    5536    
+  DriverWakeTimeMs:  735     
+  Transition StartTime: 10/31/2022 17:39:05::915
+  Transition EndTime:   10/31/2022 17:40:18::840
+End: Pass, PwrTest, (null)

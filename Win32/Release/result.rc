@@ -1,0 +1,3 @@
+pass RCDATA "C:\Users\hu\Documents\Embarcadero\Studio\Projects\MainBoard\Win32\Release\PASS.jpg"
+fail RCDATA "C:\Users\hu\Documents\Embarcadero\Studio\Projects\MainBoard\Win32\Release\FAIL.jpg"
+scan RCDATA "C:\Users\hu\Documents\Embarcadero\Studio\Projects\MainBoard\Win32\Release\scan.png"
