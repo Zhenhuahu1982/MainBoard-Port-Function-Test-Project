@@ -1,0 +1,23 @@
+
+系统上有 1 个接口: 
+
+    名称                   : WLAN
+    描述                   : Realtek 8822CE Wireless LAN 802.11ac PCI-E NIC
+    GUID                   : 7a78b907-cdb2-49d7-9a60-7dda8995dcf3
+    物理地址               : f8:54:f6:4a:82:a9
+    状态                   : 已连接
+    SSID                   : Test_2.4G
+    BSSID                  : 3a:af:bc:64:99:e9
+    网络类型               : 结构
+    无线电类型             : 802.11ac
+    身份验证               : WPA2 - 个人
+    密码                   : CCMP
+    连接模式               : 配置文件
+    信道                   : 36
+    接收速率(Mbps)         : 520
+    传输速率 (Mbps)        : 520
+    信号                   : 100%
+    配置文件               : Redmi 
+
+    Hosted network status  : 不可用
+
