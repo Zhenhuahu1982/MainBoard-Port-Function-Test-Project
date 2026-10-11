@@ -1,0 +1,133 @@
+object Frm_showmac: TFrm_showmac
+  Left = 780
+  Top = 415
+  BorderStyle = bsDialog
+  Caption = 'MAC'#22320#22336#26816#27979
+  ClientHeight = 275
+  ClientWidth = 484
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 484
+    Height = 275
+    Align = alClient
+    BiDiMode = bdLeftToRight
+    Ctl3D = True
+    DoubleBuffered = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentBackground = False
+    ParentCtl3D = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 512
+    ExplicitHeight = 292
+    object RzLabel2: TRzLabel
+      Left = 40
+      Top = 224
+      Width = 11
+      Height = 25
+      Caption = '1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Visible = False
+    end
+    object Label1: TLabel
+      Left = 56
+      Top = 63
+      Width = 108
+      Height = 35
+      ParentCustomHint = False
+      BiDiMode = bdLeftToRight
+      Caption = 'Label1'
+      Color = clBtnFace
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlue
+      Font.Height = -35
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpFixed
+      Font.Style = []
+      Font.Quality = fqClearType
+      ParentBiDiMode = False
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      ShowAccelChar = False
+      ShowHint = False
+      Transparent = False
+      StyleElements = [seClient, seBorder]
+    end
+    object Label2: TLabel
+      Left = 32
+      Top = 104
+      Width = 31
+      Height = 13
+      Caption = 'Label2'
+      Visible = False
+    end
+    object Label3: TLabel
+      Left = 88
+      Top = 208
+      Width = 104
+      Height = 45
+      Caption = 'Label3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -37
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      Visible = False
+      StyleElements = [seClient, seBorder]
+    end
+    object edtScan_mac: TEdit
+      Left = 32
+      Top = 133
+      Width = 409
+      Height = 43
+      Alignment = taCenter
+      CharCase = ecUpperCase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -29
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 12
+      ParentFont = False
+      TabOrder = 0
+      Text = '00E04C680001'
+      OnKeyPress = edtScan_macKeyPress
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 456
+    Top = 224
+  end
+  object Timer2: TTimer
+    Left = 408
+    Top = 224
+  end
+end

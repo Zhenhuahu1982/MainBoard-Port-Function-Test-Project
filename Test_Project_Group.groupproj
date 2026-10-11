@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AED514C6-062A-4C7F-8B0D-6D8B770DD59F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Test_Project_Pro.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Program_Param\测试程序参数设置.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\GETMACID_WIN\Scan_Mac_pro.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Test_Project_Pro">
+        <MSBuild Projects="Test_Project_Pro.dproj"/>
+    </Target>
+    <Target Name="Test_Project_Pro:Clean">
+        <MSBuild Projects="Test_Project_Pro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Test_Project_Pro:Make">
+        <MSBuild Projects="Test_Project_Pro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="测试程序参数设置">
+        <MSBuild Projects="..\Program_Param\测试程序参数设置.dproj"/>
+    </Target>
+    <Target Name="测试程序参数设置:Clean">
+        <MSBuild Projects="..\Program_Param\测试程序参数设置.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="测试程序参数设置:Make">
+        <MSBuild Projects="..\Program_Param\测试程序参数设置.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Scan_Mac_pro">
+        <MSBuild Projects="..\GETMACID_WIN\Scan_Mac_pro.dproj"/>
+    </Target>
+    <Target Name="Scan_Mac_pro:Clean">
+        <MSBuild Projects="..\GETMACID_WIN\Scan_Mac_pro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Scan_Mac_pro:Make">
+        <MSBuild Projects="..\GETMACID_WIN\Scan_Mac_pro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Test_Project_Pro;测试程序参数设置;Scan_Mac_pro"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Test_Project_Pro:Clean;测试程序参数设置:Clean;Scan_Mac_pro:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Test_Project_Pro:Make;测试程序参数设置:Make;Scan_Mac_pro:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

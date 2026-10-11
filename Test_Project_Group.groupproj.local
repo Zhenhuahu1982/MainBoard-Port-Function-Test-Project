@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.925,C:\Users\hu\Documents\Embarcadero\Studio\Projects\ProjectGroup2.groupproj=C:\Users\hu\Documents\Embarcadero\Studio\Projects\MainBoard\Test_Project_Group.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\hu\Documents\Embarcadero\Studio\Projects\MainBoard_DEMO\Test_Project_Pro.dproj"/>
+	</Default.Personality>
+</BorlandProject>
